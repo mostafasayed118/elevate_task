@@ -80,8 +80,3 @@ flutter run
 - `ProductsState.filtered` search logic
 - `HomeHeader` search-bar widget smoke test
 
-## Submission
-
-Per the task doc, email `elevatetechflutterteam@gmail.com` with subject
-`FlutterTaskCycle1{your name}`, attaching the GitHub repo link + this README
-with screenshots.
