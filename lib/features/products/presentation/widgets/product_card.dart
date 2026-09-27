@@ -37,9 +37,7 @@ class _ProductCardState extends State<ProductCard> {
                 width: double.infinity,
                 decoration: const BoxDecoration(
                   color: Color(0xFFF4F4F4),
-                  borderRadius: BorderRadius.vertical(
-                    top: Radius.circular(12),
-                  ),
+                  borderRadius: BorderRadius.vertical(top: Radius.circular(12)),
                 ),
                 padding: const EdgeInsets.all(12),
                 child: CachedNetworkImage(
@@ -62,8 +60,7 @@ class _ProductCardState extends State<ProductCard> {
                 top: 6,
                 right: 6,
                 child: GestureDetector(
-                  onTap: () =>
-                      setState(() => _isFavorite = !_isFavorite),
+                  onTap: () => setState(() => _isFavorite = !_isFavorite),
                   child: Container(
                     width: 28,
                     height: 28,
@@ -79,9 +76,7 @@ class _ProductCardState extends State<ProductCard> {
                       ],
                     ),
                     child: Icon(
-                      _isFavorite
-                          ? Icons.favorite
-                          : Icons.favorite_border,
+                      _isFavorite ? Icons.favorite : Icons.favorite_border,
                       size: 16,
                       color: _primary,
                     ),
@@ -127,16 +122,17 @@ class _ProductCardState extends State<ProductCard> {
                           fontWeight: FontWeight.w700,
                         ),
                       ),
-                      const SizedBox(width: 6),
+                      const SizedBox(width: 12),
                       Expanded(
                         child: Text(
                           '${product.oldPrice.toStringAsFixed(0)} EGP',
                           maxLines: 1,
                           overflow: TextOverflow.ellipsis,
-                          style: const TextStyle(
+                          style: TextStyle(
                             fontSize: 10.5,
-                            color: Color(0xFF9CA3AF),
+                            color: Colors.blue[600],
                             decoration: TextDecoration.lineThrough,
+                            decorationColor: Colors.blue[600],
                           ),
                         ),
                       ),
